@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mod by Janda Baper Groups
+# Mod by Janda Baper
 rm -f /root/opensshport
 rm -f /root/dropbearport
 rm -f /root/stunnel4port
