@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mod by jm051484
+# Mod by Janda Baper
 rm -f /root/opensshport
 rm -f /root/dropbearport
 rm -f /root/stunnel4port
