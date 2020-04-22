@@ -12,7 +12,7 @@ echo -e "* Fornesia" | lolcat
 echo -e "* Rzengineer" | lolcat
 echo -e "* Fawzya" | lolcat
 echo -e ""
-echo -e "Mod by Janda Baper Group" | lolcat
+echo -e "Mod by Janda Baper" | lolcat
 echo -e ""
 echo -e "jandabaper09@gmail.com" | lolcat
 echo -e ""
