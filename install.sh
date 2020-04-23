@@ -79,9 +79,9 @@ echo "clear" >> .bashrc
 echo 'echo -e ""' >> .bashrc
 echo 'echo -e "_____   ______   __    __  _______    ______  "' >> .bashrc
 echo 'echo -e "   |     \ /      \ |  \  |  \|       \  /      \ "' >> .bashrc
-echo 'echo -e "    \AVAVA|  AVAVAV\| AV\ | AV| AVAVAVA\|  AVAVAV\"' >> .bashrc
-echo 'echo -e "      | AV| AV__| AV| AVA\| AV| AV  | AV| AV__| AV"' >> .bashrc
-echo 'echo -e " __   | AV| AV    AV| AVAV\ AV| AV  | AV| AV    AV"' >> .bashrc
+echo 'echo -e "....\#####|  ######\| ##\ | ##| #######\|  ######\"' >> .bashrc
+echo 'echo -e "..... | ##| ##__| ##| ###\| ##| ##  | ##| ##__| ##"' >> .bashrc
+echo 'echo -e " __ ..| ##| ##....##| ####\ ##| ##  | ##| ##    ##"' >> .bashrc
 echo 'echo -e "|  \  | ##| ########| ##\## ##| ##  | ##| ########"' >> .bashrc
 echo 'echo -e "| ##__| ##| ##  | ##| ## \####| ##__/ ##| ##  | ##"' >> .bashrc
 echo 'echo -e " \##    ##| ##  | ##| ##  \###| ##    ##| ##  | ##"' >> .bashrc
