@@ -54,8 +54,8 @@ sed -i '$ i\echo "nameserver 1.0.0.1" >> /etc/resolv.conf' /etc/rc.local
 # install wget and curl
 apt-get -y install wget curl
 
-# set time GMT +8
-ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
+# set time GMT +7
+ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
@@ -79,9 +79,9 @@ echo "clear" >> .bashrc
 echo 'echo -e ""' >> .bashrc
 echo 'echo -e "_____   ______   __    __  _______    ______  "' >> .bashrc
 echo 'echo -e "   |     \ /      \ |  \  |  \|       \  /      \ "' >> .bashrc
-echo 'echo -e "    \#####|  ######\| ##\ | ##| #######\|  ######\"' >> .bashrc
-echo 'echo -e "      | ##| ##__| ##| ###\| ##| ##  | ##| ##__| ##"' >> .bashrc
-echo 'echo -e " __   | ##| ##    ##| ####\ ##| ##  | ##| ##    ##"' >> .bashrc
+echo 'echo -e "    \AVAVA|  AVAVAV\| AV\ | AV| AVAVAVA\|  AVAVAV\"' >> .bashrc
+echo 'echo -e "      | AV| AV__| AV| AVA\| AV| AV  | AV| AV__| AV"' >> .bashrc
+echo 'echo -e " __   | AV| AV    AV| AVAV\ AV| AV  | AV| AV    AV"' >> .bashrc
 echo 'echo -e "|  \  | ##| ########| ##\## ##| ##  | ##| ########"' >> .bashrc
 echo 'echo -e "| ##__| ##| ##  | ##| ## \####| ##__/ ##| ##  | ##"' >> .bashrc
 echo 'echo -e " \##    ##| ##  | ##| ##  \###| ##    ##| ##  | ##"' >> .bashrc
