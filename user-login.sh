@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Script Copyright www.fornesia.com
-# Mod by Janda Baper Group
+# Mod by Janda Baper
 # ==========================
 # 
 
@@ -50,6 +50,6 @@ echo "------------------------------------------------" | lolcat
 
 echo "";
 
-echo "Mod by Janda Baper Group" | lolcat;
+echo "Mod by Janda Baper" | lolcat;
 
 echo "";
