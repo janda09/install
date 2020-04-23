@@ -3,7 +3,7 @@
 
 read -p "Username : " Login
 read -p "Password : " Pass
-read -p "Expired (day): " Activetime
+read -p "Expired (hari): " Activetime
 
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 useradd -e `date -d "$Activetime days" +"%Y-%m-%d"` -s /bin/false -M $Login
@@ -27,5 +27,5 @@ echo -e "nginx: 81" | lolcat
 echo -e "-----------------------------" | lolcat
 echo -e "Expiration: $exp"
 echo -e "=============================" | lolcat
-echo -e "Mod by Janda Baper Group" | lolcat
+echo -e "Mod by Janda Baper" | lolcat
 echo -e ""
