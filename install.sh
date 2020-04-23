@@ -79,12 +79,12 @@ echo "clear" >> .bashrc
 echo 'echo -e ""' >> .bashrc
 echo 'echo -e "_____   ______   __    __  _______    ______  "' >> .bashrc
 echo 'echo -e "   |     \ /      \ |  \  |  \|       \  /      \ "' >> .bashrc
-echo 'echo -e "....\#####|  ######\| ##\ | ##| #######\|  ######\"' >> .bashrc
-echo 'echo -e "..... | ##| ##__| ##| ###\| ##| ##  | ##| ##__| ##"' >> .bashrc
-echo 'echo -e " __ ..| ##| ##....##| ####\ ##| ##  | ##| ##    ##"' >> .bashrc
-echo 'echo -e "|  \  | ##| ########| ##\## ##| ##  | ##| ########"' >> .bashrc
-echo 'echo -e "| ##__| ##| ##  | ##| ## \####| ##__/ ##| ##  | ##"' >> .bashrc
-echo 'echo -e " \##    ##| ##  | ##| ##  \###| ##    ##| ##  | ##"' >> .bashrc
+echo 'echo -e "....\#####|  ######\| ##\ | ##| #######\|  ######\ "' >> .bashrc
+echo 'echo -e "..... | ##| ##__| ##| ###\| ##| ##  | ##| ##__| ## "' >> .bashrc
+echo 'echo -e " __ ..| ##| ##....##| ####\ ##| ##  | ##| ##    ## "' >> .bashrc
+echo 'echo -e "|  \  | ##| ########| ##\## ##| ##  | ##| ######## "' >> .bashrc
+echo 'echo -e "| ##__| ##| ##  | ##| ## \####| ##__/ ##| ##  | ## "' >> .bashrc
+echo 'echo -e " \##    ##| ##  | ##| ##  \###| ##    ##| ##  | ## "' >> .bashrc
 echo 'echo -e "  \######  \##   \## \##   \## \#######  \##   \## "' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
