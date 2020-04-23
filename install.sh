@@ -267,7 +267,7 @@ wget -O edit-openvpn "https://raw.githubusercontent.com/janda09/install/master/e
 wget -O edit-squid3 "https://raw.githubusercontent.com/janda09/install/master/edit-squid3.sh"
 wget -O edit-stunnel4 "https://raw.githubusercontent.com/janda09/install/master/edit-stunnel4.sh"
 wget -O show-ports "https://raw.githubusercontent.com/janda09/install/master/show-ports.sh"
-wget -O usernew "https://raw.githubusercontent.com/janda09/deb9/master/usernew.sh"
+wget -O usernew "https://raw.githubusercontent.com/janda09/install/master/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/janda09/install/master/trial.sh"
 wget -O delete "https://raw.githubusercontent.com/janda09/install/master/delete.sh"
 wget -O check "https://raw.githubusercontent.com/janda09/install/master/user-login.sh"
@@ -365,7 +365,7 @@ echo ""  | tee -a log-install.txt
 echo "Other features"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
 echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
-echo "Timezone : Asia/Manila (GMT +8)"  | tee -a log-install.txt
+echo "Timezone : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Original Script by Fornesia, Rzengineer & Fawzya"  | tee -a log-install.txt
