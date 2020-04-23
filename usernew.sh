@@ -11,21 +11,21 @@ exp="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 echo -e ""
 echo -e "====SSH Account Information====" | lolcat
-echo -e "Host: $IP" | lolcat
+echo -e "Host: $IP"
 echo -e "Username: $Login "
 echo -e "Password: $Pass" 
-echo -e "Port OpenSSH: 22" | lolcat
-echo -e "Port Dropbear: 143,234,567,777" | lolcat
-echo -e "Port SSL: 443" | lolcat
+echo -e "Port OpenSSH: 22"
+echo -e "Port Dropbear: 143,234,567,777"
+echo -e "Port SSL: 443"
 echo -e "Port OpenVPNSSL: 442" | lolcat
-echo -e "Port Squid: 8000,8080 (limit to IP SSH)" | lolcat
-echo -e "Config SSL: http://$IP:81/ssl.conf" | lolcat
-echo -e "Config OpenVPNSSL: http://$IP:81/openvpnssl.ovpn" | lolcat
-echo -e "Config OpenVPN (TCP 1194): http://$IP:81/client.ovpn" | lolcat
-echo -e "badvpn: badvpn-udpgw port 7500" | lolcat
-echo -e "nginx: 81" | lolcat
-echo -e "-----------------------------" | lolcat
+echo -e "Port Squid: 8000,8080 (limit to IP SSH)"
+echo -e "Config SSL: http://$IP:81/ssl.conf"
+echo -e "Config OpenVPNSSL: http://$IP:81/openvpnssl.ovpn"
+echo -e "Config OpenVPN (TCP 1194): http://$IP:81/client.ovpn"
+echo -e "badvpn: badvpn-udpgw port 7500"
+echo -e "nginx: 81" 
+echo -e "=============================" | lolcat
 echo -e "Expiration: $exp"
 echo -e "=============================" | lolcat
-echo -e "Mod by Janda Baper" | lolcat
+echo -e "Mod by Janda Baper" 
 echo -e ""
