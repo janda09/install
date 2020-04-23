@@ -8,3 +8,7 @@
 <br>OpenVPN : TCP 1194 (client config : http://myip:81/client.ovpn)
 <br>badvpn : badvpn-udpgw port 7500
 <br>nginx : 81
+
+Auto-Installer
+
+apt-get update && apt-get upgrade -y && wget https://raw.githubusercontent.com/janda09/install/master/install.sh && chmod +x install.sh && ./install.sh
