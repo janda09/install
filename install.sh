@@ -375,4 +375,4 @@ echo "Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
 cd
-rm -f /root/VPScrptZ.sh
+rm -f /root/install.sh
