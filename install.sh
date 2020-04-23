@@ -86,10 +86,10 @@ echo 'echo -e "|  \  | ##| ########| ##\## ##| ##  | ##| ######## "' >> .bashrc
 echo 'echo -e "| ##__| ##| ##  | ##| ## \####| ##__/ ##| ##  | ## "' >> .bashrc
 echo 'echo -e " \##    ##| ##  | ##| ##  \###| ##    ##| ##  | ## "' >> .bashrc
 echo 'echo -e "  \######  \##   \## \##   \## \#######  \##   \## "' >> .bashrc
-echo 'echo -e ""' >> .bashrc
+echo 'echo -e "                                      Baper Group™" | lolcat' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
-echo 'echo -e "Script mod by Janda Baper"' >> .bashrc
-echo 'echo -e "Type menu to display a list of commands"' >> .bashrc
+echo 'echo -e "Script mod by Janda Baper" | lolcat' >> .bashrc
+echo 'echo -e "Type menu to display a list of commands" | lolcat' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver
@@ -105,9 +105,9 @@ wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/janda09/in
 apt-get -y install openvpn easy-rsa openssl
 cp -r /usr/share/easy-rsa/ /etc/openvpn
 mkdir /etc/openvpn/easy-rsa/keys
-sed -i 's|export KEY_COUNTRY="US"|export KEY_COUNTRY="JB"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_PROVINCE="CA"|export KEY_PROVINCE="JandaBaper"|' /etc/openvpn/easy-rsa/vars
-sed -i 's|export KEY_CITY="SanFrancisco"|export KEY_CITY="JandaBaper"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_COUNTRY="US"|export KEY_COUNTRY="ID"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_PROVINCE="CA"|export KEY_PROVINCE="JATIM"|' /etc/openvpn/easy-rsa/vars
+sed -i 's|export KEY_CITY="SanFrancisco"|export KEY_CITY="KEDIRI"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_ORG="Fort-Funston"|export KEY_ORG="JandaBaper"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_EMAIL="me@myhost.mydomain"|export KEY_EMAIL="jandabaper09@gmail.com"|' /etc/openvpn/easy-rsa/vars
 sed -i 's|export KEY_OU="MyOrganizationalUnit"|export KEY_OU="JandaBaper"|' /etc/openvpn/easy-rsa/vars
