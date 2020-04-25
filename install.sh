@@ -77,7 +77,7 @@ apt-get -y install nano iptables-persistent dnsutils screen whois ngrep unzip un
 
 echo "clear" >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo 'echo -e "_____   ______   __    __  _______    ______  "' >> .bashrc
+echo 'echo -e "    _____   ______   __    __  _______    ______  "' >> .bashrc
 echo 'echo -e "   |     \ /      \ |  \  |  \|       \  /      \ "' >> .bashrc
 echo 'echo -e "....\#####|  ######\| ##\ | ##| #######\|  ######\ "' >> .bashrc
 echo 'echo -e "..... | ##| ##__| ##| ###\| ##| ##  | ##| ##__| ## "' >> .bashrc
