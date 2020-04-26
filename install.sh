@@ -340,7 +340,7 @@ echo "OpenSSH  : 22"  | tee -a log-install.txt
 echo "Dropbear : 143, 234, 567, 777"  | tee -a log-install.txt
 echo "SSL      : 443"  | tee -a log-install.txt
 echo "OpenVPNSSL : 442"  | tee -a log-install.txt
-echo "Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
+echo "Squid3   : 80, 8080 (limit to IP SSH)"  | tee -a log-install.txt
 echo "SSL      : http://$MYIP:81/ssl.conf"  | tee -a log-install.txt
 echo "OpenVPNSSL: http://$MYIP:81/openvpnssl.ovpn"  | tee -a log-install.txt
 echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
