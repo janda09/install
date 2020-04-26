@@ -18,7 +18,7 @@ echo -e "Port OpenSSH: 22"  | lolcat
 echo -e "Port Dropbear: 143,234,567,777"  | lolcat
 echo -e "Port SSL: 443" | lolcat
 echo -e "Port OpenVPNSSL: 442" | lolcat
-echo -e "Port Squid: 8000,8080 (limit to IP SSH)" | lolcat
+echo -e "Port Squid: 80,8080 (limit to IP SSH)" | lolcat
 echo -e "Config SSL: http://$IP:81/ssl.conf" | lolcat
 echo -e "Config OpenVPNSSL: http://$IP:81/openvpnssl.ovpn" | lolcat
 echo -e "Config OpenVPN (TCP 1194): http://$IP:81/client.ovpn" | lolcat
