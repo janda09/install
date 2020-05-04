@@ -16,8 +16,8 @@ country=ID
 state=JATIM
 locality=KEDIRI
 organization=IPANG
-organizationalunit=NETT
-commonname=NOTT
+organizationalunit=IPANG
+commonname=IPANG
 email=zuhriirfan09@gmail.com
 
 # configure rc.local
