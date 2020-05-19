@@ -22,5 +22,5 @@ echo -e " ╚█████╔╝██║  ██║██║ ╚████�
 echo -e "  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝ " 
 echo -e "                                     Baper Group™ " | lolcat
 echo -e ""
-echo -e "jandabaper09@gmail.com" | lolcat
+echo -e "zuhriirfan09@gmail.com" | lolcat
 echo -e ""
