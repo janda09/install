@@ -1,3 +1,21 @@
+# Fitur
+
+menu      : Displays a list of available commands
+edit      : Edit ports
+usernew   : Creating an SSH Account
+trial     : Create a Trial Account
+delete    : Clearing SSH and OpenVPN Account
+check     : Check User Login
+member    : Check Member SSH and OpenVPN
+restart   : Restart Service dropbear, webmin
+            squid3, OpenVPN and SSH
+reboot    : reboot VPS
+speedtest : speedtest VPS
+info      : System Information
+about     : Information about auto install script
+exit      : exit Putty/Connecbot/
+            JuiceSSH
+
 # Ports
 <b><br>OpenSSH : 22
 <br>Dropbear : 143, 234, 567, 777
