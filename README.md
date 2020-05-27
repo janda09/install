@@ -1,4 +1,4 @@
-# install
+# Ports
 <b><br>OpenSSH : 22
 <br>Dropbear : 143, 234, 567, 777
 <br>SSL : 443
@@ -9,6 +9,6 @@
 <br>badvpn : badvpn-udpgw port 7500
 <br>nginx : 81
 
-Auto-Installer
+# Installation
 
-apt-get update && apt-get upgrade -y && wget https://raw.githubusercontent.com/janda09/install/master/install.sh && chmod +x install.sh && ./install.sh
+apt-get update && apt-get upgrade -y && wget https://git.io/JfrbK && chmod +x install.sh && ./install.sh
