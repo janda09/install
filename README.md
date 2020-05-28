@@ -21,4 +21,4 @@ apt-get update && apt-get upgrade -y && wget https://github.com/janda09/install/
 # Type MENU to display a list of commands
 
 # Note
-If there is an error during restart, then restart manually
+If there is an error during restart, then restart manually.
