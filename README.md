@@ -5,7 +5,7 @@ Scripts autoinstaller for Debian 9 32 & 64 bit.
 # Open Ports
 
 <br>OpenSSH : 22
-<br>Dropbear : 143, 234, 567, 777
+<br>Dropbear : 143, 109, 110, 456
 <br>SSL : 443
 <br>Squid3 : 80, 8080 (limit to IP SSH)
 <br>SSL: http://myip:81/ssl.conf
