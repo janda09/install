@@ -27,4 +27,4 @@
 
 # Installation
 
-apt-get update && apt-get upgrade -y && wget https://git.io/JfrbK && chmod +x install.sh && ./install.sh
+apt-get update && apt-get upgrade -y && wget https://github.com/janda09/install/raw/master/install.sh && chmod +x install.sh && ./install.sh
