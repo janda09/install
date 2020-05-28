@@ -1,23 +1,21 @@
 # Fitur
 
-menu      : Displays a list of available commands
-edit      : Edit ports
-usernew   : Creating an SSH Account
-trial     : Create a Trial Account
-delete    : Clearing SSH and OpenVPN Account
-check     : Check User Login
-member    : Check Member SSH and OpenVPN
-restart   : Restart Service dropbear, webmin
-            squid3, OpenVPN and SSH
-reboot    : reboot VPS
-speedtest : speedtest VPS
-info      : System Information
-about     : Information about auto install script
-exit      : exit Putty/Connecbot/
-            JuiceSSH
+<br>menu      : Displays a list of available commands
+<br>edit      : Edit ports
+<br>usernew   : Creating an SSH Account
+<br>trial     : Create a Trial Account
+<br>delete    : Clearing SSH and OpenVPN Account
+<br>check     : Check User Login
+<br>member    : Check Member SSH and OpenVPN
+<br>restart   : Restart Service dropbear, webmin, squid3, OpenVPN and SSH
+<br>reboot    : reboot VPS
+<br>speedtest : speedtest VPS
+<br>info      : System Information
+<br>about     : Information about auto install script
+<br>exit      : exit Putty/Connecbot/JuiceSSH
 
 # Ports
-<b><br>OpenSSH : 22
+<br>OpenSSH : 22
 <br>Dropbear : 143, 234, 567, 777
 <br>SSL : 443
 <br>Squid3 : 80, 8080 (limit to IP SSH)
