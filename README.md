@@ -1,20 +1,9 @@
-# Fitur
+# Abouts
 
-<br>menu      : Displays a list of available commands
-<br>edit      : Edit ports
-<br>usernew   : Creating an SSH Account
-<br>trial     : Create a Trial Account
-<br>delete    : Clearing SSH and OpenVPN Account
-<br>check     : Check User Login
-<br>member    : Check Member SSH and OpenVPN
-<br>restart   : Restart Service dropbear, webmin, squid3, OpenVPN and SSH
-<br>reboot    : reboot VPS
-<br>speedtest : speedtest VPS
-<br>info      : System Information
-<br>about     : Information about auto install script
-<br>exit      : exit Putty/Connecbot/JuiceSSH
+Scripts autoinstaller for Debian 9 32 & 64 bit.
 
-# Ports
+# Open Ports
+
 <br>OpenSSH : 22
 <br>Dropbear : 143, 234, 567, 777
 <br>SSL : 443
@@ -28,3 +17,8 @@
 # Installation
 
 apt-get update && apt-get upgrade -y && wget https://github.com/janda09/install/raw/master/install.sh && chmod +x install.sh && ./install.sh
+
+# Type MENU to display a list of commands
+
+# Note
+If there is an error during restart, then restart manually
