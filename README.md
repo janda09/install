@@ -1,6 +1,6 @@
-# Abouts
+# About
 
-Scripts autoinstaller for Debian 9 32 & 64 bit.
+Script autoinstaller for Debian 9 32 & 64 bit.
 
 # Open Ports
 
