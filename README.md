@@ -8,7 +8,7 @@ Script autoinstaller for Debian 9 32 & 64 bit.
 <br>OpenSSH : 22
 <br>Dropbear : 143, 109, 110, 456
 <br>SSL : 443
-<br>Squid3 : 3128, 8080 (limit to IP SSH)
+<br>Squid3 : 80, 8080 (limit to IP SSH)
 <br>SSL: http://myip:81/ssl.conf
 <br>OpenVPNSSL: http://myip:81/openvpnssl.ovpn
 <br>OpenVPN : TCP 1194 (client config : http://myip:81/client.ovpn)
