@@ -174,7 +174,7 @@ chmod +x /usr/bin/badvpn-udpgw
 screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7500
 
 # Install and Configure PPTP VPN
-apt-get install pptpd
+apt-get install pptpd -y
 cat <<END> /etc/ppp/pptpd-options
 ms-dns 8.8.8.8
 ms-dns 8.8.4.4
