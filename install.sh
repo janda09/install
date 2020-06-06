@@ -82,9 +82,9 @@ echo 'echo -e "| ##__| ##| ##  | ##| ## \####| ##__/ ##| ##  | ## "' >> .bashrc
 echo 'echo -e " \##    ##| ##  | ##| ##  \###| ##    ##| ##  | ## "' >> .bashrc
 echo 'echo -e "  \######  \##   \## \##   \## \#######  \##   \## "' >> .bashrc
 echo 'echo -e "                                      Baper Group™" | lolcat' >> .bashrc
-echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
-echo 'echo -e "Script mod by Janda Baper Group" | lolcat' >> .bashrc
-echo 'echo -e "Type menu to display a list of commands" | lolcat' >> .bashrc
+echo 'echo -e "welcome to the server $HOSTNAME" | lolcat -a' >> .bashrc
+echo 'echo -e "Script mod by Janda Baper Group" | lolcat -a' >> .bashrc
+echo 'echo -e "Type menu to display a list of commands" | lolcat -a' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver
@@ -172,6 +172,37 @@ fi
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7500' /etc/rc.local
 chmod +x /usr/bin/badvpn-udpgw
 screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7500
+
+# Install and Configure PPTP VPN
+apt-get install pptpd
+cat <<END> /etc/ppp/pptpd-options
+ms-dns 8.8.8.8
+ms-dns 8.8.4.4
+
+END
+
+cat <<END> /etc/pptpd.conf
+localip $MYIP
+remoteip 10.0.0.100-199
+
+END
+pptpd restart
+cat <<END> /etc/sysctl.conf
+net.ipv4.ip_forward=1
+
+END
+sysctl -p
+iptables -P FORWARD ACCEPT
+iptables --table nat -A POSTROUTING -o venet0 -j MASQUERADE
+
+cat <<END> /etc/network/if-pre-up.d/iptablesload
+#!/bin/sh
+iptables-restore < /etc/iptables.rules
+exit 0
+
+END
+chmod +x /etc/network/if-pre-up.d/iptablesload
+sysctl -p
 
 # setting port ssh
 sed -i 's/Port 22/Port 22/g' /etc/ssh/sshd_config
@@ -325,30 +356,18 @@ echo ""  | tee -a log-install.txt
 echo "Service"  | tee -a log-install.txt
 echo "-------"  | tee -a log-install.txt
 echo "OpenSSH  : 22"  | tee -a log-install.txt
-echo "Dropbear : 143, 234, 567, 777"  | tee -a log-install.txt
+echo "Dropbear : 143, 109, 110, 456"  | tee -a log-install.txt
 echo "SSL      : 443"  | tee -a log-install.txt
 echo "OpenVPNSSL : 442"  | tee -a log-install.txt
+echo "OpenVPN  : TCP 1194"  | tee -a log-install.txt
 echo "Squid3   : 80, 8080 (limit to IP SSH)"  | tee -a log-install.txt
-echo "SSL      : http://$MYIP:81/ssl.conf"  | tee -a log-install.txt
-echo "OpenVPNSSL: http://$MYIP:81/openvpnssl.ovpn"  | tee -a log-install.txt
-echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
+echo "Config VPN: http://$MYIP:81/configs.zip"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7500"  | tee -a log-install.txt
 echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Script"  | tee -a log-install.txt
 echo "------"  | tee -a log-install.txt
 echo "menu (Displays a list of available commands)"  | tee -a log-install.txt
-echo "edit (Edit Ports)"  | tee -a log-install.txt
-echo "usernew (Creating an SSH Account)"  | tee -a log-install.txt
-echo "trial (Create a Trial Account)"  | tee -a log-install.txt
-echo "delete (Clearing SSH Account)"  | tee -a log-install.txt
-echo "check (Check User Login)"  | tee -a log-install.txt
-echo "member (Check Member SSH)"  | tee -a log-install.txt
-echo "restart (Restart Service dropbear, webmin, squid3, openvpn and ssh)"  | tee -a log-install.txt
-echo "reboot (Reboot VPS)"  | tee -a log-install.txt
-echo "speedtest (Speedtest VPS)"  | tee -a log-install.txt
-echo "info (System Information)"  | tee -a log-install.txt
-echo "about (Information about auto install script)"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Other features"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
