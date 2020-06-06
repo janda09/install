@@ -252,43 +252,36 @@ sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/bnr"@g' /etc/default/dropbear
 cd
 apt-get install -y libxml-parser-perl
 
-# download script
-cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/janda09/install/master/menu.sh"
-wget -O edit "https://raw.githubusercontent.com/janda09/install/master/edit-ports.sh"
-wget -O edit-dropbear "https://raw.githubusercontent.com/janda09/install/master/edit-dropbear.sh"
-wget -O edit-openssh "https://raw.githubusercontent.com/janda09/install/master/edit-openssh.sh"
-wget -O edit-openvpn "https://raw.githubusercontent.com/janda09/install/master/edit-openvpn.sh"
-wget -O edit-squid3 "https://raw.githubusercontent.com/janda09/install/master/edit-squid3.sh"
-wget -O edit-stunnel4 "https://raw.githubusercontent.com/janda09/install/master/edit-stunnel4.sh"
-wget -O show-ports "https://raw.githubusercontent.com/janda09/install/master/show-ports.sh"
-wget -O usernew "https://raw.githubusercontent.com/janda09/install/master/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/janda09/install/master/trial.sh"
-wget -O delete "https://raw.githubusercontent.com/janda09/install/master/delete.sh"
-wget -O check "https://raw.githubusercontent.com/janda09/install/master/user-login.sh"
-wget -O member "https://raw.githubusercontent.com/janda09/install/master/user-list.sh"
-wget -O restart "https://raw.githubusercontent.com/janda09/install/master/restart.sh"
-wget -O speedtest "https://raw.githubusercontent.com/janda09/install/master/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/janda09/install/master/info.sh"
-wget -O about "https://raw.githubusercontent.com/janda09/install/master/about.sh"
+# compress configs
+cd /home/vps/public_html
+zip configs.zip ssl.conf openvpnssl.ovpn client.ovpn
 
-chmod +x menu
-chmod +x edit
-chmod +x edit-dropbear
-chmod +x edit-openssh
-chmod +x edit-openvpn
-chmod +x edit-squid3
-chmod +x edit-stunnel4
-chmod +x show-ports
-chmod +x usernew
-chmod +x trial
-chmod +x delete
-chmod +x check
-chmod +x member
-chmod +x restart
-chmod +x speedtest
-chmod +x info
-chmod +x about
+# download script
+cd
+sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.local
+sed -i '$ i\screen -AmdS ban /root/ban.sh' /etc/rc.local
+sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.d/rc.local
+sed -i '$ i\screen -AmdS ban /root/ban.sh' /etc/rc.d/rc.local
+echo "0 0 * * * root /usr/local/bin/user-expire" > /etc/cron.d/user-expire
+echo "0 0 * * * root /usr/local/bin/user-expire-pptp" > /etc/cron.d/user-expire-pptp
+
+cat > /root/ban.sh <<END3
+#!/bin/bash
+#/usr/local/bin/user-ban
+END3
+
+cat > /root/limit.sh <<END3
+#!/bin/bash
+#/usr/local/bin/user-limit
+END3
+
+cd /usr/local/bin
+wget -O menu.zip "https://raw.githubusercontent.com/janda09/Preium/master/menu.zip"
+unzip menu.zip
+rm -f menu.zip
+
+cp /usr/local/bin/premium-script /usr/local/bin/menu
+chmod +x /usr/local/bin/*
 
 # finishing
 cd
