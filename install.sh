@@ -186,8 +186,8 @@ localip $MYIP
 remoteip 10.0.0.100-199
 
 END
-pptpd restart
-cat <<END> /etc/sysctl.conf
+pptpd restart 
+cat <<'END'> /etc/sysctl.conf
 net.ipv4.ip_forward=1
 
 END
@@ -275,7 +275,7 @@ cd ddos-deflate-master
 rm -rf /root/ddos-deflate-master.zip
 
 # banner /etc/bnr
-wget -O /etc/bnr "https://raw.githubusercontent.com/janda09/install/master/bnr"
+wget -O /etc/bnr "https://raw.githubusercontent.com/janda09/install/master/banner"
 sed -i 's@#Banner@Banner@g' /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/bnr"@g' /etc/default/dropbear
 
