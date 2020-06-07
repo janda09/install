@@ -70,23 +70,6 @@ apt-get -y install nginx
 # install essential package
 apt-get -y install nano iptables-persistent dnsutils screen whois ngrep unzip unrar
 
-echo "clear" >> .bashrc
-echo 'echo -e ""' >> .bashrc
-echo 'echo -e "    _____   ______   __    __  _______    ______  "' >> .bashrc
-echo 'echo -e "   |     \ /      \ |  \  |  \|       \  /      \ "' >> .bashrc
-echo 'echo -e "    \#####|  ######\| ##\ | ##| #######\|  ######\ "' >> .bashrc
-echo 'echo -e "      | ##| ##__| ##| ###\| ##| ##  | ##| ##__| ## "' >> .bashrc
-echo 'echo -e " __   | ##| ##    ##| ####\ ##| ##  | ##| ##    ## "' >> .bashrc
-echo 'echo -e "|  \  | ##| ########| ##\## ##| ##  | ##| ######## "' >> .bashrc
-echo 'echo -e "| ##__| ##| ##  | ##| ## \####| ##__/ ##| ##  | ## "' >> .bashrc
-echo 'echo -e " \##    ##| ##  | ##| ##  \###| ##    ##| ##  | ## "' >> .bashrc
-echo 'echo -e "  \######  \##   \## \##   \## \#######  \##   \## "' >> .bashrc
-echo 'echo -e "                                      Baper Group™" | lolcat' >> .bashrc
-echo 'echo -e "welcome to the server $HOSTNAME" | lolcat -a' >> .bashrc
-echo 'echo -e "Script mod by Janda Baper Group" | lolcat -a' >> .bashrc
-echo 'echo -e "Type menu to display a list of commands" | lolcat -a' >> .bashrc
-echo 'echo -e ""' >> .bashrc
-
 # install webserver
 cd
 rm /etc/nginx/sites-enabled/default
@@ -343,6 +326,19 @@ curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-k
 apt-get update
 apt-get install neofetch
 
+# Creating Profile Info
+echo 'clear' > /etc/profile.d/janda.sh
+echo 'echo '' > /var/log/syslog' >> /etc/profile.d/janda.sh
+echo 'neofetch ' >> /etc/profile.d/janda.sh
+echo 'echo -e "" ' >> /etc/profile.d/janda.sh
+echo 'echo -e "################################################" ' >> /etc/profile.d/janda.sh
+echo 'echo -e "#               Janda Baper Group              #" ' >> /etc/profile.d/janda.sh
+echo 'echo -e "#                Ipang Nett Nott               #" ' >> /etc/profile.d/janda.sh
+echo 'echo -e "# Ketik menu untuk menampilkan daftar perintah #" ' >> /etc/profile.d/janda.sh
+echo 'echo -e "#########################3######################" ' >> /etc/profile.d/janda.sh
+echo 'echo -e "" ' >> /etc/profile.d/janda.sh
+chmod +x /etc/profile.d/janda.sh
+
 # remove unnecessary files
 apt -y autoremove
 apt -y autoclean
@@ -350,6 +346,7 @@ apt -y clean
 
 # info
 clear
+bash /etc/profile.d/janda.sh
 echo "Autoscript Include:" | tee log-install.txt
 echo "===========================================" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
