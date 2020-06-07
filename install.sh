@@ -307,9 +307,9 @@ cat > /root/limit.sh <<END3
 END3
 
 cd /usr/local/bin
-wget -O menu.zip "https://raw.githubusercontent.com/janda09/Preium/master/menu.zip"
-unzip menu.zip
-rm -f menu.zip
+wget -O premi.zip "https://raw.githubusercontent.com/janda09/install/master/premi.zip"
+unzip premi.zip
+rm -f premi.zip
 
 cp /usr/local/bin/premium-script /usr/local/bin/menu
 chmod +x /usr/local/bin/*
