@@ -270,7 +270,7 @@ apt-get install -y libxml-parser-perl
 cd /home/vps/public_html
 zip configs.zip ssl.conf openvpnssl.ovpn client.ovpn
 
-# download script
+# Installing Premium Script
 cd
 sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.local
 sed -i '$ i\screen -AmdS ban /root/ban.sh' /etc/rc.local
