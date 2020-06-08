@@ -1,6 +1,6 @@
 #!/bin/bash
 source /usr/local/sbin/base-script
-$TITLE='=•=Mod By Janda Baper Group=•='
+$TITLE='=•= Mod By Janda Baper Group =•='
 clear
 echo -e ""
 echo -e "$TITLE"
@@ -39,7 +39,7 @@ egrep "^$User" /etc/passwd &> /dev/null
 echo -e "$Pass\n$Pass\n" | passwd $User &> /dev/null
 clear
 echo -e ""
-echo -e "$TITLE"
+echo -e "$TITLE" | lolcat -a
 echo -e " Your Account:"
 echo -e "\e[32m  Username: \e[0m"$User
 echo -e "\e[32m  Password: \e[0m"$Pass
