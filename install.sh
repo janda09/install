@@ -166,7 +166,7 @@ END
 
 cat <<END> /etc/pptpd.conf
 localip $MYIP
-remoteip 10.0.0.100-199
+remoteip 127.0.0.0-225
 
 END
 pptpd restart 
