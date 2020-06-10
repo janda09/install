@@ -335,7 +335,7 @@ echo 'echo -e "################################################" ' >> /etc/profi
 echo 'echo -e "#               Janda Baper Group              #" ' >> /etc/profile.d/janda.sh
 echo 'echo -e "#                Ipang Nett Nott               #" ' >> /etc/profile.d/janda.sh
 echo 'echo -e "# Ketik menu untuk menampilkan daftar perintah #" ' >> /etc/profile.d/janda.sh
-echo 'echo -e "#########################3######################" ' >> /etc/profile.d/janda.sh
+echo 'echo -e "################################################" ' >> /etc/profile.d/janda.sh
 echo 'echo -e "" ' >> /etc/profile.d/janda.sh
 chmod +x /etc/profile.d/janda.sh
 
