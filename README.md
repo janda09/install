@@ -10,7 +10,7 @@ Script autoinstaller for Debian 9 32 & 64 bit.
 <br>SSL : 443, 442 (openvpn SSL)
 <br>OpenVPN : 1194
 <br>Squid3 : 80, 8080 (limit to IP SSH)
-<br>Config OpenVPN: http://myip:81/configs.zip
+<br>Config OpenVPN: http://myip:81/janda.zip
 <br>badvpn : badvpn-udpgw port 7500
 <br>nginx : 81
 
