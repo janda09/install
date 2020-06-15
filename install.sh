@@ -268,7 +268,7 @@ apt-get install -y libxml-parser-perl
 
 # compress configs
 cd /home/vps/public_html
-zip configs.zip ssl.conf openvpnssl.ovpn client.ovpn
+zip janda.zip ssl.conf openvpnssl.ovpn client.ovpn
 
 # Installing Premium Script
 cd
@@ -358,7 +358,7 @@ echo "SSL      : 443"  | tee -a log-install.txt
 echo "OpenVPNSSL : 442"  | tee -a log-install.txt
 echo "OpenVPN  : TCP 1194"  | tee -a log-install.txt
 echo "Squid3   : 80, 8080 (limit to IP SSH)"  | tee -a log-install.txt
-echo "Config VPN: http://$MYIP:81/configs.zip"  | tee -a log-install.txt
+echo "Config VPN: http://$MYIP:81/janda.zip"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7500"  | tee -a log-install.txt
 echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
