@@ -325,6 +325,7 @@ echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/
 curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
 apt-get update
 apt-get install neofetch
+apt-get install vnstat -y
 
 # Creating Profile Info
 echo 'clear' > /etc/profile.d/janda.sh
