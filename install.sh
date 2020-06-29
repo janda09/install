@@ -72,7 +72,7 @@ apt-get -y install nano iptables-persistent dnsutils screen whois ngrep unzip un
 
  # Creating a SSH server config using cat eof tricks
  cat <<'MySSHConfig' > /etc/ssh/sshd_config
-# My OpenSSH Server config
+# Mod By Janda Baper Group
 Port 22
 AddressFamily inet
 ListenAddress 0.0.0.0
@@ -91,7 +91,7 @@ PrintMotd no
 ClientAliveInterval 240
 ClientAliveCountMax 2
 UseDNS no
-Banner /etc/banner
+Banner /etc/bnr
 AcceptEnv LANG LC_*
 Subsystem   sftp  /usr/lib/openssh/sftp-server
 MySSHConfig
@@ -326,7 +326,7 @@ chmod +x /usr/local/bin/*
 # finishing
 cd
 chown -R www-data:www-data /home/vps/public_html
-/etc/init.d/sshd restart
+service sshd restart
 /etc/init.d/nginx restart
 /etc/init.d/openvpn restart
 /etc/init.d/cron restart
