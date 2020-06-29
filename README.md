@@ -21,4 +21,4 @@ apt-get update && apt-get upgrade -y && wget https://github.com/janda09/install/
 
 # Note
 If there is an error during restart, then restart manually.
-after the installation is complete restart stunnel4 manually.
+<br>After the installation is complete restart stunnel4 manually.
