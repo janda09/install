@@ -1,7 +1,6 @@
 # About
 
-Script autoinstaller for Debian 9 32 & 64 bit.
-
+Janda Baper Group
 
 # Open Ports
 
