@@ -15,7 +15,7 @@ Janda Baper Group
 
 # Installation
 
-apt-get update && apt-get upgrade -y && wget https://raw.githubusercontent.com/janda09/install/master/install && chmod +x install && ./install
+apt-get update && apt-get upgrade -y && wget https://github.com/janda09/install/raw/master/install && chmod +x install && ./install
 
 # Type MENU to display a list of commands
 
