@@ -68,7 +68,33 @@ apt-get update
 apt-get -y install nginx
 
 # install essential package
-apt-get -y install nano iptables-persistent dnsutils screen whois ngrep unzip unrar
+apt-get -y install nano iptables-persistent dnsutils screen whois ngrep unzip unrar ssh
+
+ # Creating a SSH server config using cat eof tricks
+ cat <<'MySSHConfig' > /etc/ssh/sshd_config
+# My OpenSSH Server config
+Port 22
+AddressFamily inet
+ListenAddress 0.0.0.0
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+PermitRootLogin yes
+MaxSessions 1024
+PubkeyAuthentication yes
+PasswordAuthentication yes
+PermitEmptyPasswords no
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+ClientAliveInterval 240
+ClientAliveCountMax 2
+UseDNS no
+Banner /etc/banner
+AcceptEnv LANG LC_*
+Subsystem   sftp  /usr/lib/openssh/sftp-server
+MySSHConfig
 
 # install webserver
 cd
@@ -300,6 +326,7 @@ chmod +x /usr/local/bin/*
 # finishing
 cd
 chown -R www-data:www-data /home/vps/public_html
+/etc/init.d/sshd restart
 /etc/init.d/nginx restart
 /etc/init.d/openvpn restart
 /etc/init.d/cron restart
