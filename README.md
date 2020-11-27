@@ -1,7 +1,8 @@
 # About
 
 Janda Baper Group
-
+<br> Dropbear Version 2019.78
+<br>
 # Open Ports
 
 <br>OpenSSH : 22
